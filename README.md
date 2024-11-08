@@ -25,3 +25,21 @@
 > ![image](https://github.com/user-attachments/assets/bc85b42d-6af3-451c-888c-05a4367d4053)
 > <br/><br/>
 > 앱으로 부터 받은 GPS 좌표가 저장된 Firebase를 연동하여(Firebase SDK 이용) JSP 내 지도에 추가
+> <br/><br/><br/><br/>
+>  ```
+>  connection = DriverManager.getConnection(url,user,password);
+>	      	st = connection.createStatement();
+>	    	
+>	        String query = "UPDATE gis_point SET geom = ST_SetSRID(ST_MakePoint(?,?), 4326) WHERE id = 1";
+>	    	  statement = connection.prepareStatement(query);
+>	    	
+>	    	  statement.setFloat(1, myLongitude);
+>	    	  statement.setFloat(2, myLatitude);
+>	    	  statement.executeUpdate();
+>  ```
+> <br/>
+> Firebase로 부터 받은 GPS 좌표가 저장된 index.jsp 로 부터 받은 위도, 경도의 값을 SQL에 갱신
+> <br/><br/><br/><br/>
+> ![image](https://github.com/user-attachments/assets/37147ef2-9b46-4ca3-9242-8e36ada40d61)
+> <br/><br/>
+> PostGIS의 St_contains 함수를 이용하여 polygon(위험구역)안에 point(사용자 위치)가 진입하면 1을 반환하여 진입여부 판단
