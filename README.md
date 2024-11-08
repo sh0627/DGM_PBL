@@ -11,7 +11,8 @@
 >>
 > <br/>
 >
-> - 프로젝트 내용
+>  ### 프로젝트 내용
+> #### - index.jsp
 > ![image](https://github.com/user-attachments/assets/36306299-e1cc-416f-a503-af10df782786)
 > <br/><br/><br/><br/>
 > ![image](https://github.com/user-attachments/assets/249521aa-ee13-42f4-9fb4-f8f2c8082dd1)
@@ -26,6 +27,7 @@
 > <br/><br/>
 > 앱으로 부터 받은 GPS 좌표가 저장된 Firebase를 연동하여(Firebase SDK 이용) JSP 내 지도에 추가
 > <br/><br/><br/><br/>
+> #### - MyServlet.java
 >  ```
 >  connection = DriverManager.getConnection(url,user,password);
 >	      	st = connection.createStatement();
