@@ -21,3 +21,7 @@
 > ![image](https://github.com/user-attachments/assets/013ae155-a6e9-4139-b380-0997591c6d81)
 > <br/><br/>
 > PostgreSQL에 저장된 polygon 데이터를 Geoserver를 이용해 JSP 내 지도에 이미지 영역으로 추가
+> <br/><br/><br/><br/>
+> ![image](https://github.com/user-attachments/assets/bc85b42d-6af3-451c-888c-05a4367d4053)
+> <br/><br/>
+> 앱으로 부터 받은 GPS 좌표가 저장된 Firebase를 연동하여(Firebase SDK 이용) JSP 내 지도에 추가
